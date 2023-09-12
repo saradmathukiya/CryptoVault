@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  background-color: #14161a;
+}
+
+.wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+/* Navbar */
+
+.Navbar {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  color: gold;
+}
+
+.Label {
+  font-size: larger;
+  font-weight: 700;
+}
+
+h2 {
+  cursor: pointer;
+  user-select: none;
+}
+
+.Select {
+  color: gold;
+  font-size: medium;
+  width: 70px;
+  height: 30px;
+  margin-left: 10px;
+  border-radius: 5px;
+  border-color: white;
+  border-width: 2px;
+}
+
+/* Banner */
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  user-select: none;
+}
+
+.bannerTitle {
+  color: white;
+  padding: 20px 0;
+  font-size: xx-large;
+}
+
+.banner p{
+  color: rgb(176, 176, 176);
+}
+
+.slider {
+  color: white;
+  text-decoration: none;
+  margin-top: 50px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+img {
+  height: 80px;
+  width: 80px;
+}
+
+.trendPrice {
+  color:white;
+  font-size: large;
+}
+
+ /* Crypto Table */
+
+.tableContainer {
+  width: 100%;
+  overflow: scroll;
+  margin-block: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tableContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.tableContainer h1 {
+  color: white;
+  font-weight: 200;
+  padding: 20px 0;
+}
+
+.tableContainer input {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  border: 2px solid;
+  border-color: gold;
+  color: #102c57;
+  padding: 10px 40px;
+  font-size: medium;
+}
+
+.loader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+table {
+  color: white;
+  width: 100%;
+  margin-block: 30px;
+}
+
+table,
+th,
+td {
+  border-collapse: collapse;
+}
+
+th {
+  background-color: gold;
+  font-size: larger;
+  padding: 20px 20px;
+  color: #102c57;
+}
+
+.coinsRow {
+  text-align: left;
+}
+
+.colData {
+  text-align: right;
+  padding: 0px 20px;
+}
+
+.firstColData {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+ /* Pagination  */
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-block: 1rem;
+  gap: 10px;
+}
+
+.pagination button {
+  color: white;
+  font-size: larger;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  border-color: gold;
+  border: 2px solid gold;
+}
+
+.pagination button.active {
+  background-color: gold;
+  color: white;
+}
+
+ /* Coin Page  */
+
+.coinPage {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+}
+
+
+ /* Coin Data Component  */
+
+.aboutCoin {
+  width: 30%;
+}
+
+.aboutCoin h1 {
+  color: gold;
+}
+
+.upperPart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.lowerPart {
+  color: white    ;
+  gap: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* Chart Component  */
+
+.chart {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 0 30px;
+}
+
+.chartButtons {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.chartControlButton {
+  background-color: #14161a;
+  color:white;
+  /* border-color: gold; */
+  font-size: medium;
+  width: 100px;
+  border: 2px solid gold;
+  border-radius: 20px;
+  height: 40px;
+  /* box-shadow:2px 2px 5px #102c57; */
+}
+
+.chartControlButton:hover {
+  background-color: gold;
+  color:white;
+  font-weight: bold;
+  border-color: #102c57;
+}
+
+ /* For Responsiveness  (Tab - View)  */
+
+@media only screen and (max-width: 1090px) {
+  .chart {
+    width: 110%;
+    margin-block: 30px;
+    /* height: 50vh; */
+  }
+
+  .coinPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .aboutCoin {
+    width: 80%;
+  }
+}
+
+/* For Responsiveness ( Mobile - View )  */
+
+@media only screen and (max-width: 580px) {
+  .wrapper {
+    width: 100%;
+    overflow: scroll;
+  }
+}
